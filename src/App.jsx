@@ -10,7 +10,7 @@ function App() {
    
 
   return (
-     <section className='w-[100vw] h-[100vh] bg-black '>
+     <section className='w-[100vw] h-[100vh] bg-black  pt-2'>
       <Navbar/>
        
      </section>
