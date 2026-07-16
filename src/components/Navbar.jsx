@@ -62,7 +62,7 @@ const Navbar = ()=>{
 
 
     return(
-        <div  className="bg-white p-[10px] flex  justify-between items-baseline px-[50px]  mx-[30px] mt-5 py-[20px] border-2 border-black rounded-md">
+        <div  className="bg-white p-[10px] flex  justify-between items-center px-[50px]  mx-[30px] mt-5 py-[10px] border-2 border-black rounded-md">
             <div ref={logoRef} className="font-serif text-[30px] font-bold text-yellow-300  ">APPROX</div>
             <h1 ref={homeRef} className="text-[25px] font-bold">Home</h1>
             <h1 ref={aboutRef} className="text-[25px]  font-bold">About</h1>
