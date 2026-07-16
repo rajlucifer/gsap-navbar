@@ -14,7 +14,7 @@ const Navbar = ()=>{
     
     // now we use the gsap  useGSAP is similar as useEffect 
     useGSAP(()=>{
-        gsap.from(logoRef.current,{
+        timeLi.from(logoRef.current,{
             y:-30,
             // duration:2,
             opacity:0, // it use to make the opacity 0 means not visible            
@@ -62,13 +62,13 @@ const Navbar = ()=>{
 
 
     return(
-        <div  className="bg-white p-[10px] flex  justify-between px-[50px]  mx-[30px] mt-5 py-[20px] border-2 border-black rounded-md">
+        <div  className="bg-white p-[10px] flex  justify-between items-baseline px-[50px]  mx-[30px] mt-5 py-[20px] border-2 border-black rounded-md">
             <div ref={logoRef} className="font-serif text-[30px] font-bold text-yellow-300  ">APPROX</div>
             <h1 ref={homeRef} className="text-[25px] font-bold">Home</h1>
             <h1 ref={aboutRef} className="text-[25px]  font-bold">About</h1>
             <h1 ref={projectRef} className="text-[25px] font-bold">Project</h1>
             <h1 ref={contactRef} className="text-[25px] font-bold">Contact</h1>
-            <button ref={buttonRef} className="w-[60px] h-[30px] border-2 border-black rounded-md hover:bg-blue-500 hover:text-white"> Menu</button>
+            <button ref={buttonRef} className="w-[70px] h-[30px] border-2 py-[2px]  px-[10px] border-black rounded-md hover:bg-blue-500 hover:text-white"> Menu</button>
 
 
         </div>
