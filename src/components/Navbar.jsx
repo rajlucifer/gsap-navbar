@@ -2,6 +2,7 @@ import react from "react";
 import gsap from "gsap";
 import {useGSAP} from "@gsap/react";
 import { useRef } from "react";
+import Hamburger from "./Hamburger";
 
 const Navbar = ()=>{
     const logoRef = useRef(null);
@@ -9,16 +10,17 @@ const Navbar = ()=>{
     const aboutRef = useRef(null);
     const projectRef = useRef(null);
     const contactRef = useRef(null);
-    const buttonRef = useRef(null);
-    const timeLi = gsap.timeline();
+    const hamburgerRef = useRef(null);
+   
     
     // now we use the gsap  useGSAP is similar as useEffect 
     useGSAP(()=>{
+        const timeLi = gsap.timeline();
         timeLi.from(logoRef.current,{
             y:-30,
             // duration:2,
             opacity:0, // it use to make the opacity 0 means not visible            
-            color:"blue",
+            // color:"blue",
         })
         timeLi.from(homeRef.current,{
             y:-30,
@@ -48,7 +50,7 @@ const Navbar = ()=>{
              
              
         })
-        timeLi.from(buttonRef.current,{
+        timeLi.from(hamburgerRef.current,{
             x:30,
             // duration:2,
             opacity:0,
@@ -68,7 +70,7 @@ const Navbar = ()=>{
             <h1 ref={aboutRef} className="text-[25px]  font-bold">About</h1>
             <h1 ref={projectRef} className="text-[25px] font-bold">Project</h1>
             <h1 ref={contactRef} className="text-[25px] font-bold">Contact</h1>
-            <button ref={buttonRef} className="w-[70px] h-[30px] border-2 py-[2px]  px-[10px] border-black rounded-md hover:bg-blue-500 hover:text-white"> Menu</button>
+            <Hamburger buttonRef={hamburgerRef} />
 
 
         </div>
