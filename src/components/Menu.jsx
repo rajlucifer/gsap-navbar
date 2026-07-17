@@ -32,9 +32,9 @@ const Menu = ({ isopen,onClose }) => {
 
         <div
             ref={menuRef}
-            className="flex flex-col px-[20px] py-[30px] font-mono font-bold bg-white text-black text-[30px] border-2 border-black w-[250px] h-[100vh] absolute top-[-50px] right-[-100px] opacity-0"
-            style={{ transform: "translateX(300px)" }}
-        >   
+            className="flex flex-col px-[20px] py-[30px] font-mono font-bold bg-white text-black text-[30px] border-2 border-black w-[250px] h-[100vh] absolute top-[-50px] right-[-100px] opacity-0">
+           
+           
             <IoMdCloseCircle  className="absolute top-3 right-4" onClick={onClose}/>
             <h1>Home</h1>
             <h1>About</h1>
