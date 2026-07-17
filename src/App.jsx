@@ -12,7 +12,7 @@ function App() {
    
 
   return (
-     <section className=' w-full min-h-screen bg-black  pt-2'>
+     <section className=' w-full min-h-screen bg-yellow-500  pt-2 overflow-x-hidden'>
       <Navbar/>
       <Scroll/>
       

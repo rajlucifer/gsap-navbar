@@ -70,7 +70,9 @@ const Navbar = ()=>{
             <h1 ref={aboutRef} className="text-[25px]  font-bold">About</h1>
             <h1 ref={projectRef} className="text-[25px] font-bold">Project</h1>
             <h1 ref={contactRef} className="text-[25px] font-bold">Contact</h1>
-            <Hamburger buttonRef={hamburgerRef} />
+            <div>
+                <Hamburger buttonRef={hamburgerRef} />
+            </div>
 
 
         </div>

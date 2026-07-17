@@ -23,7 +23,7 @@ const Scroll = ({ bgcolor, bgbox }) => {
                 start:"50% 50%",
                 end:"80% 20%",
                 scrub:true,
-                markers:true
+                // markers:true
             }
         })
         gsap.to(boxRef2.current,{
@@ -34,7 +34,7 @@ const Scroll = ({ bgcolor, bgbox }) => {
                 start:"top center",
                 end:"bottom top",
                 scrub:true, // is use controll the rotation final and initial by using the scroll 
-                markers:true
+                // markers:true
             }
 
         })
@@ -46,7 +46,7 @@ const Scroll = ({ bgcolor, bgbox }) => {
                 start:"40%",
                 end:"bottom top",
                 scrub:true,
-                markers:true
+                // markers:true
             }
 
         })
